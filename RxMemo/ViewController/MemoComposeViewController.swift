@@ -19,7 +19,7 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
     
 
     func bindViewModel() {
-        <#code#>
+         
     }
 
 }

@@ -19,7 +19,7 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
     
 
     func bindViewModel() {
-        <#code#>
+         
     }
 
 }
