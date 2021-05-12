@@ -54,7 +54,7 @@ class MemoDetailViewModel: CommonViewModel {
                 
         }
     }
-    
+
     func makeEditAction() -> CocoaAction {
         return CocoaAction { _ in
             let compseViewModel = MemoComposeViewModel(title: "메모 편집", content: self.memo.content, sceneCoordinator: self.sceneCoordinator, storage: self.storage, saveAction: self.performUpdate(memo: self.memo))
@@ -64,5 +64,13 @@ class MemoDetailViewModel: CommonViewModel {
             return self.sceneCoordinator.transition(to: composeScene, using: .modal, animated: true).asObservable().map { _ in }
         }
     }
+    
+    func makeDeleteAction() -> CocoaAction {
+        return Action { input in
+            self.storage.delete(memo: self.memo)
+            return self.sceneCoordinator.close(animated: true).asObservable().map { _ in }
+        }
+    }
+    
     
 }
