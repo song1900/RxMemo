@@ -29,6 +29,7 @@
 		F68763CD26498CC8009BA4A7 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68763CC26498CC8009BA4A7 /* SceneCoordinatorType.swift */; };
 		F68763D026498D49009BA4A7 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68763CF26498D49009BA4A7 /* SceneCoordinator.swift */; };
 		F68763FD2649950C009BA4A7 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68763FC2649950C009BA4A7 /* CommonViewModel.swift */; };
+		F6876400264BCA84009BA4A7 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68763FF264BCA84009BA4A7 /* CoreDataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		F68763CC26498CC8009BA4A7 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		F68763CF26498D49009BA4A7 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		F68763FC2649950C009BA4A7 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		F68763FF264BCA84009BA4A7 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				F6876384264835B8009BA4A7 /* RxMemo.xcdatamodeld */,
+				F68763FF264BCA84009BA4A7 /* CoreDataStorage.swift */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F68763A926483A15009BA4A7 /* MemoryStorage.swift in Sources */,
+				F6876400264BCA84009BA4A7 /* CoreDataStorage.swift in Sources */,
 				F68763C1264981D3009BA4A7 /* MemoComposeViewModel.swift in Sources */,
 				F68763D026498D49009BA4A7 /* SceneCoordinator.swift in Sources */,
 				F68763CA26498B2D009BA4A7 /* Scene.swift in Sources */,
