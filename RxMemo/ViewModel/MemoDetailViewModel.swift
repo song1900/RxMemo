@@ -11,7 +11,7 @@ import RxCocoa
 import Action
 
 class MemoDetailViewModel: CommonViewModel {
-    let memo: Memo
+    var memo: Memo
     
     private var formatter: DateFormatter = {
         let f = DateFormatter()
@@ -43,6 +43,9 @@ class MemoDetailViewModel: CommonViewModel {
         return Action { input in
             self.storage.update(memo: memo, content: input)
                 .subscribe(onNext: { updated in
+                    
+                    self.memo = updated
+                    
                     self.contents.onNext([
                         updated.content,
                         self.formatter.string(from: updated.insertDate)
